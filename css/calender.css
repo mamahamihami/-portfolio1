@@ -1,0 +1,63 @@
+@import url(sanitize.css);
+
+body {
+    background-color: black;
+
+}
+
+.loop_wrap ul {
+    display: flex;
+    max-width: 100vw;
+    min-width: 240px;
+    height: 280px;
+
+
+}
+
+.loop_wrap ul img {
+    width: 430px;
+    height: 280px;
+
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-200%);
+    }
+}
+
+.loop_wrap img:first-child {
+    animation: loop 25s -13s ease-in infinite;
+}
+
+.loop_wrap img:last-child {
+    animation: loop2 25s ease-in infinite;
+}
+
+button {
+    color: white;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+}
+audio{
+    height: 30px;
+}

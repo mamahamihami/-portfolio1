@@ -1,0 +1,89 @@
+@import url(sanitize.css);
+body {
+    animation: bgchange 10s ease infinite;
+    max-width: 800px;
+    min-width: 240px;
+    margin: 0 auto;
+}
+
+@keyframes bgchange {
+    0% {
+        background: linear-gradient(to left, #000, #000, #000, #000);
+    }
+    10% {
+        background: linear-gradient(to left, #d3d3d3, #000, #000, #d3d3d3);
+    }
+    40% {
+        background: linear-gradient(to left, #a9a9a9, #000, #000, #a9a9a9);
+    }
+    60% {
+        background: linear-gradient(to left, #808080, #000, #000, #808080);
+    }
+    80% {
+        background: linear-gradient(to left, #808080, #000, #000, #808080);
+    }
+    100% {
+        background: linear-gradient(to left, #000, #000, #000, #000);
+    }
+}
+
+.rogo {
+    width: 350px;
+    margin: auto;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.rogo img {
+    width: 350px;
+    height: 350px;
+}
+.rogo p {
+    font-size: 80px;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: top;
+    line-height: 0.3em;
+    font-family: 'Noto Naskh Arabic';
+}
+
+.pattern1 {
+    background: #000000;
+}
+
+.pattern1 img {
+    opacity: 0;
+    transform: scale(.5);
+    transition: 2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.pattern1.show img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.pattern1 p {
+    color: #fff;
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: 2s;
+    transition-delay: 2s;
+}
+
+.pattern1.show p {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.example {
+    font-size: 30px;
+    font-family: 'Noto Naskh Arabic';
+    margin-left: 3px;
+    margin-top: 50px;
+    margin-right: 2px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}

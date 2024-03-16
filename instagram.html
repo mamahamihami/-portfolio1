@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instagram</title>
+    <link rel="stylesheet" href="css/instagram.css">
+</head>
+
+<body>
+    <audio src="mp3/Orange_Highway.mp3" controls>
+        <p>ご利用のブラウザーでは再生出来ません</p>
+      </audio>
+  
+      <button onclick="window.open"><a href="raul.html" target="_parent">return</a></button>
+
+    <body>
+        <div id="photo">
+            <img src="img/エッフェル塔.jpg" width="850" height="600" alt="">
+            <img src="img/file1 (3).png" width="460" height="630" alt="">
+            <img src="img/file1 (7).png" width="460" height="630" alt="">
+            <img src="img/file1 (6).png" width="460" height="630" alt="">
+            <img src="img/file1 (5).png" width="460" height="630" alt="">
+            <img src="img/file1 (10).png" width="500" height="700" alt="">
+            <img src="img/file1 (2).jpeg" width="700" height="700" alt="">
+            <img src="img/file1 (1).jpeg" width="700" height="700" alt="">
+            <img src="img/callenge_11.png" width="800" height="650" alt="">
+        </div>
+    </body>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            var setImg = '#photo';
+            var fadeSpeed = 1300;
+            var switchDelay = 3000;
+
+            $(setImg).children('img').css({ opacity: '0' });
+            $(setImg + ' img:first').stop().animate({ opacity: '1', zIndex: 'auto' }, fadeSpeed);
+
+            setInterval(function () {
+                $(setImg + ' :first-child').animate({ opacity: '0' }, fadeSpeed).next('img').animate({ opacity: '1' }, fadeSpeed).end().appendTo(setImg);
+            }, switchDelay);
+        });
+    </script>
+
+</html>

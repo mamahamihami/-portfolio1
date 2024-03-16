@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+}
+
+#photo {
+    width: 900px;
+    height: 700px;
+    margin:auto ;
+    text-align: center;
+    
+    
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    font-family: 'Noto Naskh Arabic';
+    font-size: 3px;
+    font-weight: bold;
+   
+  
+}
+button{
+    float: right;
+    background-color: black;
+}
+audio{
+    width: 100px;
+    height: 8px;
+}

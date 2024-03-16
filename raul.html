@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAUL</title>
+    <link rel="stylesheet" href="css/raul.css">
+</head>
+
+<body>
+    <div class="rogo pattern1">
+        <img src="img/R_ロゴ.png" alt="rogo pattern1">
+        <p>RAUL</p>
+    </div>
+
+    <div align="center" class="example">
+        <button onclick="window.open"><a href="calender.html" target="_parent">calenda</a></button>
+        <button onclick="window.open"><a href="instagram.html" target="_parent">Instagram</a></button>
+        <button onclick="window.open"><a href="index.html" target="_parent">top</a></button>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        window.onload = function () {
+            const fade = document.getElementsByClassName('pattern1');
+            fade[0].classList.add('show');
+            fade[0].classList.add
+
+        }
+        $(window).scroll(function () {
+            $(".rogo").each(function () {
+                var offset = $(this).offset().top;
+                var scroll = $(window).scrollTop();
+                var wHeight = $(window).height();
+
+                if (scroll > offset - wHeight + wHeight / 2) {
+                    $(this).addClass("show")
+                }
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

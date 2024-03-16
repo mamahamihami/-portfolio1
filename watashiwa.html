@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>わたしの幸せな結婚</title>
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/watashiwa.css">
+</head>
+
+<body>
+    <button onclick="window.open"><a href="index.html" target="_parent">top</a></button>
+    <div class="block-one">
+        <img src="img/わたしの幸せな結婚.png">
+    </div>
+    <header>
+        <img src="img/わたしの幸せな結婚_ポスター.jpg">
+        <h1>目黒 蓮　×　今田 美桜</h1>
+        <h1>発行部数 550万部　今最も注目のラブストーリーを</h1>
+        <h1>塚原 あゆ子監督が待望の映画化</h1>
+        <br>
+        <iframe width="700" height="500" src="https://www.youtube.com/embed/NyoYskNaYRk"
+            title="映画『わたしの幸せな結婚』予告【3/17公開】" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+            <br>
+    </header>
+
+    <script>
+        $(".block-one").fadeIn(0);
+        $(document).ready(function () {
+            setTimeout(function () {
+                $(".block-two").css("display", "block");
+                $(".block-one").fadeOut(2000);
+            }, 2000);
+        });
+    </script>
+
+</body>
+
+</html>
